@@ -1,0 +1,29 @@
+// varibels
+@font-family-name:TrebuchetMS;
+@font-family-baner:SegoeWPN;
+@font-family-two-banner:SegoeWP-light;
+// примеси @font-face 
+.font(@font-family-name){
+@font-face{
+	font-family: @font-family-name;
+	src: url('../fonts/@{font-family-name}.eot');
+	src: url('../fonts/@{font-family-name}eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/@{font-family-name}.woff');
+	}
+}
+.font(@font-family-baner){
+	@font-face{
+	font-family: @font-family-baner;
+	src: url('../fonts/@{font-family-baner}.eot');
+	src: url('../fonts/@{font-family-baner}eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/@{font-family-baner}.woff');
+	}
+}
+.font(@font-family-two-banner){
+	@font-face{
+	font-family: @font-family-two-banner;
+	src: url('../fonts/@{font-family-two-banner}.eot');
+	src: url('../fonts/@{font-family-two-banner}eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/@{font-family-two-banner}.woff');
+	}
+}
